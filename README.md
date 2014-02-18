@@ -1,0 +1,1 @@
+Hi! My name is Juan Carlos Quintero, i'm a software developer from Venezuela. This is my personal page, follow me on Twitter @juancarlosqr
