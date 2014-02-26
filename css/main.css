@@ -1,0 +1,62 @@
+
+/*
+#1abc9c
+*/
+
+/* navbar */
+
+.navbar-brand {
+	padding-top: 35px;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #4c5f70;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #4c5f70;
+}
+
+a:hover,a:focus {
+	color: #4c5f70;
+}
+
+.navbar-nav>li.active>a {
+	border-bottom: 2px solid #4c5f70;
+}
+
+/* end navbar */
+
+.centered {
+    text-align: center;
+}
+
+.section-page .head-section {
+	margin-bottom: 10px; 
+}
+
+#section-services {
+	background: #2ea28e;
+}
+
+#section-tagline {
+	background: #eb7260;
+}
+
+#section-about {
+	background: #4c5f70;
+	color: #fff;
+	padding: 75px 0;
+}
+
+.progress-bar {
+	background-color: #2ea28e;
+}
+
+#wpdesk-footer-page {
+	background-color: #2f2f2f;
+}
+#wpdesk-footer-page span {
+	color: #fff;
+}

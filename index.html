@@ -1,192 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Juan Carlos Quintero's personal page">
-    <meta name="author" content="Juan Carlos Quintero">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
-
-    <title>Juan Carlos Quintero's page</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/hover.zoom.js"></script>
-    <script src="assets/js/hover.zoom.conf.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand tpl-link" href="#" data-url="#tpl-index">Juan Carlos Quintero</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="work.html">Work</a></li> -->
-            <li><a class="tpl-link" href="#" data-url="#tpl-index">Home</a></li>
-            <li><a class="tpl-link" href="#" data-url="#tpl-about">About</a></li>
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-            <!-- <li><a href="contact.html">Contact</a></li> -->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-	<!-- +++++ Output Section +++++ -->
-  <div id="tpl-output"></div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Juan Carlos Quintero </title>
+	<!-- Font Montserrat -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<!-- Files Style -->
+	<link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="./css/prettyPhoto.css">
+	<link type="text/css" rel="stylesheet" href="./css/main.css">
 	
-  <!-- +++++ Footer Section +++++ -->
-  
-  <div id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h4>My Bunker</h4>
-          <p>
-            +58 412 379 9966<br/>
-            Caracas, Venezuela.
-          </p>
-        </div><!-- /col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <h4>My Links</h4>
-          <p>
-            <a class="external" href='ma&#105;l&#116;&#111;&#58;j%63qui&#110;%&#55;4%65ro&#46;%6&#51;&#101;&#64;g&#109;%61&#105;l&#46;c&#37;&#54;F&#109;'>Gmail</a><br/>
-            <a class="external" href="https://github.com/juancarlosqr">GitHub</a><br/>
-            <a class="external" href="https://bitbucket.org/juancarlosqr">Bitbucket</a><br/>
-            <a class="external" href="https://twitter.com/juancarlosqr">Twitter</a><br/>
-            <a class="external" href="https://instagram.com/juancarlosqr">Instagram</a><br/>
-          </p>
-        </div><!-- /col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <h4>About Stanley</h4>
-          <p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
-        </div><!-- /col-lg-4 -->
-      
-      </div>
-    
-    </div>
-  </div>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+		<script src="./js/respond.min.js"></script>
+	<![endif]-->
+	<!-- Favicons --> 
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<!-- For iPhone with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+</head>
 
-	<!-- +++++ Handlebars Templates Section +++++ -->
 
-  <script id="tpl-index" type="text/x-handlebars-template">
+<body id="wpdesk-body-page">
 
-    <div id="ww">
+	<!-- Static navbar -->
+	<header id="wpdesk-header-page" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			 <div id="wpdesk-navbar-header" class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a id="wpdesk-navbar-brand" class="navbar-brand retina" href="#">
+					Juan Carlos Quintero
+				</a>
+			</div><!-- /#wpdesk-navbar-header -->
+		
+			<div class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#section-about">About</a></li>
+					<li><a href="#section-services">Services</a></li>
+					<!-- <li><a href="#section-works">Works</a></li> -->
+					<!-- <li><a href="#section-team">Team</a></li> -->
+					<li><a href="#section-skills">Skills</a></li>
+					<!-- <li><a href="#section-testimonial">Testimonials</a></li> -->
+					<!-- <li><a href="#section-clients">Clients</a></li> -->
+					<li><a href="#section-contact">Contact Me</a></li>
+				</ul>
+
+			</div><!--/.nav-collapse -->
+
+		</div><!-- /.container -->
+	</header><!-- /#wpdesk-header-page -->
+
+	<section id="section-about" class="section-page">
         <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 centered">
-            <img src="assets/img/photo.png" alt="Juan Carlos Quintero">
+            <img src="./images/photo.png" alt="Juan Carlos Quintero">
             <h1>Hi, I&#39;m Juan Carlos!</h1>
-            <p>Hello everybody. I&#39;m Juan Carlos, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
+            <p>Hello everybody. I&#39;m Juan Carlos, an awesome developer from Caracas, graduated in Computer Engineer from the UCAB! This is my personal page where i try to showcase my work with a clean style.</p>
             <p>Please, consider to register to our newsletter to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
           
           </div><!-- /col-lg-8 -->
         </div><!-- /row -->
         </div> <!-- /container -->
-    </div><!-- /ww -->
+    </section><!-- /section-about -->
+	
 
-  </script>
+	
 
-  <script id="tpl-about" type="text/x-handlebars-template">
+	<!-- Section Services -->
+	<section id="section-services" class="section-page">
+		<div class="container">
 
-    <div id="ww">
-        <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 centered">
-            <h1>About me!</h1>
-            <p>Hello everybody. I&#39;m Juan Carlos Quintero, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
-            <p>Please, consider to register to our newsletter to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
-          
-          </div><!-- /col-lg-8 -->
-        </div><!-- /row -->
-        </div> <!-- /container -->
-    </div><!-- /ww -->
-    
-    <div class="container pt">
-      <div class="row mt centered"> 
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-book"></span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-        
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-user"></span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
+			<div class="head-section">
+          		<h1>Services</h1>
+          		<p>Our vision is simple. We want to create websites and applications with both high quality design and easy-to-access content. The finished product will be totally unique and represent awesomeness.</p>
+			</div><!-- /.head-section -->
+			
+			<br />
+			<br />
+			<div class="row">
 
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-fire"></span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
+				<article class="box-service col-md-4">
+					<img alt="" title="Development Websites" class="retina" src="./images/service_2.png" data-at2x="./images/service_2@2.png" />
+					<h4>Web Development</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+					</p>
+				</article><!-- /#service_2 -->
 
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-globe"></span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-      </div><!-- /row -->
-      
-      <div class="row mt">
-        <div class="col-lg-6">
-          <h4>THE THINKING</h4>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-        </div><!-- /colg-lg-6 -->
-        
-        <div class="col-lg-6">
-          <h4>THE SKILLS</h4>
-          PHP
-          <div class="progress">
-            <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              <span class="sr-only">60% Complete</span>
-            </div>
-          </div>
+				<article id="service_1" class="box-service col-md-4">
+					<img alt="" title="Beautifully Simplistic" src="./images/service_1.png" data-at2x="./images/service_1@2.png" />
+					<h4>Mobile Development</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+					</p>
+				</article><!-- /#service_1 -->
 
-          Javascript
-          <div class="progress">
-            <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-              <span class="sr-only">40% Complete</span>
-            </div>
-          </div>
-          
-          HTML + CSS
-          <div class="progress">
-            <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-              <span class="sr-only">95% Complete</span>
-            </div>
-          </div>
+				<article class="box-service col-md-4 ">
+					<img alt="" title="Free Management & Support" src="./images/service_3.png" data-at2x="./images/service_3@.png" />
+					<h4>Tech Consulting & Support</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+					</p>
+				</article><!-- /#service_3 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section><!-- #section-services -->
 
-        </div><!-- /col-lg-6 -->
-      </div><!-- /row -->
-    </div><!-- /container -->
+	<!-- Section Tagline -->
+	<section id="section-tagline" class="section-page">
+		<div class="container">
+			<h2>A Beautiful and Elegant Template One Page For Studios And Freelancers.</h2>
+			<p>We are awesome team. We offer creative solutions for every web-based project you can think of. We take pride in our work and everything we create is executed with precision and love.</p>
+		</div>
+	</section>
 
-  </script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/handlebars-v1.3.0.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
+	<!-- Section Skills -->
+	<section id="section-skills" class="section-page">
+		<div class="container">
+			<div class="head-section">
+				<h2>Skills</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+			</div><!-- /.head-section -->
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h4>About My Skills.</h4>
+
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, </p>
+				</div><!-- /.col-md-6 -->
+
+				<div class="col-md-6">
+					<h4>Skills.</h4>
+				
+					<div id="progress_1">
+						<span class="title-progress">PHP ( 70% ) </span>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+								<span class="sr-only">70% Complete</span>
+							</div><!-- /.progress-bar -->
+						</div><!-- /.progress -->
+					</div><!-- /#progress_1 --> 
+
+					<div id="progress_2">
+						<span class="title-progress">C# (60%)</span>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60% Complete</span>
+							</div><!-- /.progress-bar -->
+						</div><!-- /.progress -->
+					</div><!-- /#progress_2 --> 
+
+					<div id="progress_3">
+						<span class="title-progress">JAVA (50%)</span>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+								<span class="sr-only">50% Complete</span>
+							</div><!-- /.progress-bar -->
+						</div><!-- /.progress -->
+					</div><!-- /#progress_3 --> 
+
+					<div id="progress_4">
+						<span class="title-progress">HTML + CSS (80%)</span>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+								<span class="sr-only">80% Complete</span>
+							</div><!-- /.progress-bar -->
+						</div><!-- /.progress -->
+					</div><!-- /#progress_4 -->
+
+					<div id="progress_5">
+						<span class="title-progress">Linux (40%)</span>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+								<span class="sr-only">40% Complete</span>
+							</div><!-- /.progress-bar -->
+						</div><!-- /.progress -->
+					</div><!-- /#progress_5 -->
+
+				</div><!-- /.col-md-6 -->
+				<br />
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /#section-skills -->
+	
+
+	<!-- Section Contact -->
+	<section id="section-contact" class="section-page">
+		<div class="container">
+			<div class="head-section">
+				<h2>Contact Me</h2>
+			</div><!-- /.head-section -->
+		
+			<div id="links-contact">
+				<a target="_blank" class="linkedin" href="https://ve.linkedin.com/in/juancarlosqr" title=""></a>
+				<a target="_blank" class="github" href="https://github.com/juancarlosqr" title=""></a>
+				<a target="_blank" class="twitter" href="https://twitter.com/juancarlosqr" title=""></a>
+				<a target="_blank" class="instagram" href="https://instagram.com/juancarlosqr" title=""></a>
+				<a target="_blank" class="google-plus" href="https://www.google.com/+JuanCarlosQuinteroR" title=""></a>
+				<a target="_blank" class="facebook" href="#" title=""></a>
+				<a target="_blank" class="skype" href="#" title=""></a>
+				<!-- <a class="dribbble" href="#" title=""></a> -->
+			</div><!-- /#links-contact -->
+		</div><!-- /.container -->
+	</section><!-- /#section-contact -->
+
+
+	<!-- Footer Page -->
+	<footer id="wpdesk-footer-page" class="">
+		<div class="container">
+			<span class="copyright">© Copyright 2014. Juan Carlos Quintero</span>
+		</div><!-- /.container -->
+	</footer><!-- /#wpdesk-footer-page -->
+	
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="./js/jquery_2.0.3.js"></script>
+	
+	<script type="text/javascript" src="./js/retina.js"></script>
+
+	<script type="text/javascript" src="./js/carousel.js"></script>
+		
+	<script type="text/javascript" src="./js/transition.js"></script>
+
+	<script type="text/javascript" src="./js/scrollspy.js"></script>
+
+	<script type="text/javascript" src="./js/collapse.js"></script>
+
+	<script type="text/javascript" src="./js/jquery.cycle.all.latest.js"></script>
+
+	<script type="text/javascript" src="./js/jquery.nav.js"></script>
+	
+	<script type="text/javascript" src="./js/jquery.scrollTo.js"></script>
+
+	<script type="text/javascript" src="./js/jquery.prettyPhoto.js"></script>
+
+	<script type="text/javascript" src="./js/custom.js"></script>
+</body>
 </html>
