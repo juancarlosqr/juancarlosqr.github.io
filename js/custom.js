@@ -39,14 +39,9 @@ $(document).ready(function(){
         });
       });
 
+	// testing border radius support
 	if (!Modernizr.borderradius) {
-		// $.getScript("jquery.corner.js", function () {
-		// 	$("#cornerDiv").corner();
-		// });
-		alert('no corners');
 		$('#section-contact #links-contact a').attr( "border", "0px" ).removeAttr("border-radius");
-	} else {
-		alert('with corners');
 	}
 
 });
