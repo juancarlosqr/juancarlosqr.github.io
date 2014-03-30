@@ -66,4 +66,7 @@ a:hover,a:focus {
 	.navbar-brand {
 		font-size: 15px;
 	}
+	h1 {
+		font-size: 24px;
+	}
 }
