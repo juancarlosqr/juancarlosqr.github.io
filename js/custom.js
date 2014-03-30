@@ -43,7 +43,10 @@ $(document).ready(function(){
 		// $.getScript("jquery.corner.js", function () {
 		// 	$("#cornerDiv").corner();
 		// });
-		$('#section-contact #links-contact a').attr( "border", "0px" );
+		alert('no corners');
+		$('#section-contact #links-contact a').attr( "border", "0px" ).removeAttr("border-radius");
+	} else {
+		alert('with corners');
 	}
 
 });
