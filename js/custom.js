@@ -38,4 +38,12 @@ $(document).ready(function(){
           }, 500);
         });
       });
+
+	if (!Modernizr.borderradius) {
+		// $.getScript("jquery.corner.js", function () {
+		// 	$("#cornerDiv").corner();
+		// });
+		$('#section-contact #links-contact a').attr( "border", "0px" );
+	}
+
 });

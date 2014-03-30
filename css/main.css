@@ -60,3 +60,10 @@ a:hover,a:focus {
 #wpdesk-footer-page span {
 	color: #fff;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+	.navbar-brand {
+		font-size: 15px;
+	}
+}
