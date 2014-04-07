@@ -50,7 +50,7 @@ $(document).ready(function(){
 	// show/hide scroll up button 
     $window.scroll(function(){
         if ($(this).scrollTop() > 100) {
-            $('#scrollup').fadeIn();
+            // $('#scrollup').fadeIn();
         } else {
             $('#scrollup').fadeOut();
     	}
