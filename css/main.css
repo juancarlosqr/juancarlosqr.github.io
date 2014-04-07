@@ -61,6 +61,17 @@ a:hover,a:focus {
 	color: #fff;
 }
 
+#scrollup {
+    background: url("../images/gotop.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    bottom: 100px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    text-indent: -9999px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	/* Styles */
 	.navbar-brand {

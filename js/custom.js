@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+	$window = $(window);
+
+	// Testing border radius support
+	if (!Modernizr.borderradius) {
+		$('#section-contact #links-contact a').attr( "border", "0px" ).removeAttr("border-radius");
+	}
+
 	// prettyPhoto
 	$("a[class^='prettyPhoto']").prettyPhoto();
 
@@ -37,11 +45,20 @@ $(document).ready(function(){
             height: $(cs).height()
           }, 500);
         });
-      });
+    });
 
-	// testing border radius support
-	if (!Modernizr.borderradius) {
-		$('#section-contact #links-contact a').attr( "border", "0px" ).removeAttr("border-radius");
-	}
+	// show/hide scroll up button 
+    $window.scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scrollup').fadeIn();
+        } else {
+            $('#scrollup').fadeOut();
+    	}
+    });
+    // scroll up action
+	$('#scrollup').on('click',function(e){
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: 0 }, 'slow');
+	});
 
 });
