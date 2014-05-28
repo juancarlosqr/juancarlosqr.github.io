@@ -1,0 +1,9 @@
+COMMAND LINE
+
+MySQL
+
+# backup
+mysqldump -u [user] -p [database] > dumpfilename.sql
+
+# restore
+mysql -u [user] -p [db] < script.sql
