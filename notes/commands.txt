@@ -2,6 +2,97 @@
 command line cheat sheet
 ========================================================================
 ------------------------------------------------------------------------
+git
+
+# configuration
+
+## installing git
+apt-get install git
+apt-get install git-core
+
+## settings
+
+### set your name, email
+git config --global user.name "Juan Carlos Quintero"
+git config --global user.email "jcquintero@gmail.com"
+
+### set default behavior for push
+git config --global push.default current
+
+# basics
+
+git init
+
+## adding remotes
+git remote add <name> <url>
+
+## cloning
+git clone <url>
+
+## staging and committing
+git add <file>
+git add .txt ( staging all txt files in current directory )
+gti add ".txt" ( staging all txt files in the entire project )
+gti add --all ( staging all files )
+git commit -a -m '<message>' ( staging and comitting changes at the same time )
+
+# branches
+
+## creating branches
+git branch <branch>
+git checkout -b <branch> ( create a new branch and checkout )
+
+## change to a branch
+git checkout <branch>
+
+## listing branches
+git branch ( local )
+git branch -r ( remote )
+
+## merging
+git merge <branch>
+
+## pulling
+git pull
+git pull <remote> <branch>
+
+## pushing 
+git push
+git push -u <remote> <branch> ( start tracking it )
+git push <remote> <branch>
+
+## delete branch 
+git branch -d <branch> ( local )
+git push <remote> --delete <branch> ( remote )
+git push <remote> :<branch> ( remote )
+
+# rolling back changes
+git reset --soft HEAD^
+git reset --hard <commit>
+git reset --hard <commit>
+git commit --amend
+git rebase
+
+# stashing
+git stash
+git stash list
+git stash apply
+git stash clear
+
+------------------------------------------------------------------------
+ssh
+
+# generate keys
+ssh-keygen -t rsa -C "jcquintero.ce@gmail.com"
+
+# copy public key
+cat ~/.ssh/key.pub | pbcopy
+
+# testing ssh
+ssh -T git@github.com
+ssh -T git@bitbucket.org
+
+------------------------------------------------------------------------
 linux 
 
 # listening services 
@@ -65,52 +156,6 @@ mysqladmin -u root password 'your_password'
 set auth value to 'cookie' in config.inc.php
 
 ------------------------------------------------------------------------
-ssh
-
-# generate keys
-ssh-keygen -t rsa -C "jcquintero.ce@gmail.com"
-
-# copy public key
-cat ~/.ssh/key.pub | pbcopy
-
-# testing ssh
-ssh -T git@github.com
-ssh -T git@bitbucket.org
-
-------------------------------------------------------------------------
-git
-
-# installing git
-apt-get install git
-apt-get install git-core
-
-# set your username
-git config --global user.name "Juan Carlos Quintero"
-
-# set your email address
-git config --global user.email "jcquintero@gmail.com"
-
-git config --global push.default current
-
-git init
-git remote add origin <url>
-git clone <url>
-git checkout <branch>
-git branch <branch>
-# delete branch locally
-git branch -d <branch>
-git merge <branch>
-git pull origin <branch>
-git push origin <branch>
-
-git reset --hard <commit>
-
-git stash
-git stash list
-git stash apply
-git stash clear
-
-------------------------------------------------------------------------
 oh-my-szh
 
 # update
@@ -143,7 +188,6 @@ wget {file}
 wget --no-parent -r -p -U Mozilla http://wp-desk.com/lovinflat/
 
 ------------------------------------------------------------------------
-
 MAC command line
 
 Listing processes
