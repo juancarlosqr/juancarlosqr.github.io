@@ -63,6 +63,7 @@ git push <remote> <branch>
 
 ## delete branch 
 git branch -d <branch> ( local )
+git branch -D <branch> ( local - force )
 git push <remote> --delete <branch> ( remote )
 git push <remote> :<branch> ( remote )
 
@@ -73,11 +74,22 @@ git reset --hard <commit>
 git commit --amend
 git rebase
 
+# remote
+git remote show origin
+git remote prune <remote> ( clean deleted remote branches )
+
 # stashing
 git stash
 git stash list
 git stash apply
 git stash clear
+
+# tags
+
+git tag ( list )
+git checkout ( tag )
+git tag -a <tag> -m "<msg>" ( adding tag )
+git push --tags ( pushing to remote )
 
 ------------------------------------------------------------------------
 ssh
