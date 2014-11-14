@@ -16,8 +16,23 @@ apt-get install git-core
 git config --global user.name "Juan Carlos Quintero"
 git config --global user.email "jcquintero@gmail.com"
 
-### set default behavior for push
+### default behavior for push, color ui
 git config --global push.default current
+git config --global color.ui true
+git config --global core.editor <editor>
+git config --global merge.tool <tool>
+git config --list
+git config <config>
+
+### aliases
+
+git config --global alias.<name> <alias>
+	git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+	git config --global alias.st status
+	git config --global alias.co checkout
+	git config --global alias.br branch
+	git config --global alias.cm commit
+	git config --global alias.pl pull
 
 # basics
 
@@ -35,6 +50,10 @@ git add .txt ( staging all txt files in current directory )
 gti add ".txt" ( staging all txt files in the entire project )
 gti add --all ( staging all files )
 git commit -a -m '<message>' ( staging and comitting changes at the same time )
+
+## removing and untracking
+git rm <file> ( delete from git and from file system )
+git rm --cached <file> ( keeps in the file system and delete from git, just stops tracking it )
 
 # branches
 
@@ -68,6 +87,7 @@ git push <remote> --delete <branch> ( remote )
 git push <remote> :<branch> ( remote )
 
 # rolling back changes
+
 git reset --soft HEAD^
 git reset --hard <commit>
 git reset --hard <commit>
@@ -75,10 +95,14 @@ git commit --amend
 git rebase
 
 # remote
+
 git remote show origin
 git remote prune <remote> ( clean deleted remote branches )
+git push <remote> <local-branch>:<remote-branch>
+	git push heroku-staging staging:master
 
 # stashing
+
 git stash
 git stash list
 git stash apply
@@ -90,6 +114,60 @@ git tag ( list )
 git checkout ( tag )
 git tag -a <tag> -m "<msg>" ( adding tag )
 git push --tags ( pushing to remote )
+
+# log
+
+git log
+
+## log one line with just hash and commit msg
+git log --pretty=oneline
+
+## print a diff with changes
+git log --oneline -p
+
+## print stats
+git log --oneline --stat
+
+## graph
+git log --oneline --graph
+git log --oneline --graph --decorate --color
+
+## time filter
+git log --until=1.minute.ago
+git log --since=1.day.ago
+git log --since=1.hour.ago
+git log --since=1.month.ago --until=2.weeks.ago
+
+# diffs
+git diff
+git diff HEAD
+git diff HEAD^^
+git diff HEAD~5
+git diff HEAD^..HEAD
+git diff <hash>..<hash>
+git diff <branch> <branch>
+git diff --since=1.hour.ago
+
+# blame
+
+git blame <file> --date short
+
+# excluding and ignoring
+
+## excluding
+put the name of the file/folder in the file:
+.git/info/exclude 
+
+experiment/
+tutorial.mp4
+*.mp4
+logs/*.log
+
+## ignoring
+put the name of the file/folder in the file:
+.gitignore 
+
+logs/*.log
 
 ------------------------------------------------------------------------
 ssh
