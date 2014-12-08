@@ -104,9 +104,15 @@ git push <remote> <local-branch>:<remote-branch>
 # stashing
 
 git stash
+git stash save '<message>'
 git stash list
+git stash pop
 git stash apply
 git stash clear
+git stash show stash@{< stash_index >}
+git stash show -p stash@{< stash_index >}
+git stash show --stat
+git stash branch <name_for_new_branch_from_stash>
 
 # tags
 
