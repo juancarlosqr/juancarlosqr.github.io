@@ -27,12 +27,18 @@ git config <config>
 ### aliases
 
 git config --global alias.<name> <alias>
-	git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
-	git config --global alias.st status
-	git config --global alias.co checkout
-	git config --global alias.br branch
-	git config --global alias.cm commit
-	git config --global alias.pl pull
+git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.cm commit
+git config --global alias.pl pull
+
+### line-endings
+git config --global core.autocrlf input (line-endings for Unix OS)
+git config --global core.autocrlf true (line-endings for Windows OS)
+*.sh    text eol=lf (in .gitattributes)
+*.bat   text eol=crlf (in .gitattributes)
 
 # basics
 
@@ -99,7 +105,7 @@ git rebase
 git remote show origin
 git remote prune <remote> ( clean deleted remote branches )
 git push <remote> <local-branch>:<remote-branch>
-	git push heroku-staging staging:master
+git push heroku-staging staging:master
 
 # stashing
 
@@ -113,6 +119,22 @@ git stash show stash@{< stash_index >}
 git stash show -p stash@{< stash_index >}
 git stash show --stat
 git stash branch <name_for_new_branch_from_stash>
+
+# cherry-pick
+
+git cherry-pick <hash> (get the hash commit from other branch)
+git cherry-pick --edit <hash> (edit the commit message)
+git cherry-pick --no-commit <hash> <hash> (get 2 commits and added to HEAD without commit)
+git cherry-pick -x <hash> (keeps track of where the cherry-picked commit is coming from)
+git cherry-pick --signoff <hash> (commits who did the cherry-picking)
+
+# submodules
+git submodule add <repo> (add the submodule)
+git submodule init (initialize the submodules)
+git submodule update (checkouts the submodules)
+git checkout <branch> (checkout inside submodules, they start on no branch)
+git push --recurse-submodules=check (to check if are uncommited changes inside submodules)
+git push --recurse-submodules=on-demand (to automatically commit changes inside submodules)
 
 # tags
 
@@ -144,7 +166,17 @@ git log --since=1.day.ago
 git log --since=1.hour.ago
 git log --since=1.month.ago --until=2.weeks.ago
 
+# reflogs
+
+git reflog
+git hard --reset <hash> (reset to a hash commit in the reflog)
+git hard --reset HEAD@{ <commit_index> }
+git log --walk-reflogs
+git branch <branch> <hash> (get back a deleted branch)
+git branch <branch> HEAD@{ <commit_index> }
+
 # diffs
+
 git diff
 git diff HEAD
 git diff HEAD^^
