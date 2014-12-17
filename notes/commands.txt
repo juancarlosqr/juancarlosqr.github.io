@@ -111,6 +111,7 @@ git push heroku-staging staging:master
 
 git stash
 git stash save '<message>'
+git stash save -u '<message>' (for stash untracked files)
 git stash list
 git stash pop
 git stash apply
