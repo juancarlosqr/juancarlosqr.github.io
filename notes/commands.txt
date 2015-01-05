@@ -94,6 +94,7 @@ git push <remote> :<branch> ( remote )
 
 # rolling back changes
 
+git reset --hard HEAD~1  (removing last commit if not pushed)
 git reset --soft HEAD^
 git reset --hard <commit>
 git reset --hard <commit>
