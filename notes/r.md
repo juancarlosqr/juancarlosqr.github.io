@@ -1,22 +1,22 @@
 # R notes
 
-## listing CRAN available packages
+### listing CRAN available packages
 
 available.packages()
 
-## installing packages
+### installing packages
 
 install.packages( "<package>" )
 install.packages( c("<package1>","<package2>") )
 
-## including packages
+### including packages
 
 library( <package> )
 search()
 
-## verify installation package
+### verify installation package
 
 find.package( "package" )
 
-## Rtools
+### Rtools
 find_rtools()
