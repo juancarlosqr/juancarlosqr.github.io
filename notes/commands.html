@@ -1223,16 +1223,19 @@ source ~/.bashrc</p>
 <hr />
 <h2 id="mysql"><a name="user-content-mysql" href="#mysql" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>mysql</h2>
 <h3 id="connect"><a name="user-content-connect" href="#connect" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>connect</h3>
-<p>mysql -u root -p</p>
-<h3 id="import"><a name="user-content-import" href="#import" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>import</h3>
-<p>mysql -u root -p &ldquo;database&rdquo; &gt; script.sql</p>
+<p>mysql -u [user] -p</p>
+<h3 id="export-backup"><a name="user-content-export-backup" href="#export-backup" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>export / backup</h3>
+<p>mysqldump -u [user] -p [database] &gt; dumpfilename.sql<br />
+mysql -u [user] -p [database] &gt; script.sql</p>
+<h3 id="import-restore"><a name="user-content-import-restore" href="#import-restore" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>import / restore</h3>
+<p>mysql -u [user] -p [database] &lt; script.sql</p>
 <h3 id="create-db"><a name="user-content-create-db" href="#create-db" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>create db</h3>
-<p>create database &ldquo;database&rdquo;</p>
+<p>create database [database]</p>
 <h3 id="create-user"><a name="user-content-create-user" href="#create-user" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>create user</h3>
 <h3 id="grant-privileges"><a name="user-content-grant-privileges" href="#grant-privileges" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>grant privileges</h3>
 <h3 id="set-root-password-in-phpmyadmin"><a name="user-content-set-root-password-in-phpmyadmin" href="#set-root-password-in-phpmyadmin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set root password in phpmyadmin</h3>
 <h4 id="in-the-mysql-console-set-a-new-password"><a name="user-content-in-the-mysql-console-set-a-new-password" href="#in-the-mysql-console-set-a-new-password" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>in the mysql console set a new password</h4>
-<p>mysqladmin -u root password &lsquo;your_password&rsquo;</p>
+<p>mysqladmin -u root password [your_password]</p>
 <h4 id="set-auth-value-to-cookie-in-configincphp"><a name="user-content-set-auth-value-to-cookie-in-configincphp" href="#set-auth-value-to-cookie-in-configincphp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set auth value to &lsquo;cookie&rsquo; in config.inc.php ()</h4>
 <hr />
 <h2 id="oh-my-szh"><a name="user-content-oh-my-szh" href="#oh-my-szh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>oh-my-szh</h2>

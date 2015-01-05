@@ -272,13 +272,17 @@ sudo ./xampp-linux-1.8.2-2-installer.run
 ## mysql
 
 ### connect
-mysql -u root -p
+mysql -u [user] -p
 
-### import
-mysql -u root -p "database" > script.sql
+### export / backup 
+mysqldump -u [user] -p [database] > dumpfilename.sql
+mysql -u [user] -p [database] > script.sql
+
+### import / restore
+mysql -u [user] -p [database] < script.sql
 
 ###create db
-create database "database"
+create database [database]
 
 ### create user
 
@@ -287,7 +291,7 @@ create database "database"
 ### set root password in phpmyadmin 
 
 #### in the mysql console set a new password
-mysqladmin -u root password 'your_password'
+mysqladmin -u root password [your_password]
 
 #### set auth value to 'cookie' in config.inc.php ()
 
