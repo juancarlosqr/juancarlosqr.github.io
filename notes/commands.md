@@ -56,6 +56,8 @@ git commit -a -m 'message' ( staging and comitting changes at the same time )
 #### removing and untracking
 git rm "file" ( delete from git and from file system )
 git rm --cached "file" ( keeps in the file system and delete from git, just stops tracking it )
+git clean -f ( delete file from untracked area )
+git clean -d ( delete directory from untracked area )
 
 ### branches
 
