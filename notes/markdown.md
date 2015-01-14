@@ -25,7 +25,7 @@ x = 2 + 2
 what is x
 ```
 
-![Image of Service](images/service_2.png)
+![Image of Service](../themes/lovinflat/service_2.png)
 
 [Visit GitHub!](www.github.com)
 
