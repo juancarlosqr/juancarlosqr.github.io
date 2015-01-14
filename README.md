@@ -1,6 +1,4 @@
-# README
-
-## Juan Carlos Quintero
+# Juan Carlos Quintero
 
 ![My Photo](public/photo.png)
 
