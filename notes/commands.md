@@ -283,7 +283,7 @@ mysql -u [user] -p [database] > script.sql
 ### import / restore
 mysql -u [user] -p [database] < script.sql
 
-###create db
+### create db
 create database [database]
 
 ### create user
@@ -292,10 +292,15 @@ create database [database]
 
 ### set root password in phpmyadmin 
 
-#### in the mysql console set a new password
-mysqladmin -u root password [your_password]
+#### set the password with mysqladmin
+/opt/lampp/bin/mysqladmin -u root password [your_password]
 
-#### set auth value to 'cookie' in config.inc.php ()
+#### set auth_type value to 'cookie'
+In /opt/lampp/phpmyadmin/config.inc.php change to this
+
+```
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+```
 
 ---
 ## oh-my-szh

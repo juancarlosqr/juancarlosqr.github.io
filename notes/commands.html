@@ -1236,9 +1236,13 @@ mysql -u [user] -p [database] &gt; script.sql</p>
 <h3 id="create-user"><a name="user-content-create-user" href="#create-user" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>create user</h3>
 <h3 id="grant-privileges"><a name="user-content-grant-privileges" href="#grant-privileges" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>grant privileges</h3>
 <h3 id="set-root-password-in-phpmyadmin"><a name="user-content-set-root-password-in-phpmyadmin" href="#set-root-password-in-phpmyadmin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set root password in phpmyadmin</h3>
-<h4 id="in-the-mysql-console-set-a-new-password"><a name="user-content-in-the-mysql-console-set-a-new-password" href="#in-the-mysql-console-set-a-new-password" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>in the mysql console set a new password</h4>
-<p>mysqladmin -u root password [your_password]</p>
-<h4 id="set-auth-value-to-cookie-in-configincphp"><a name="user-content-set-auth-value-to-cookie-in-configincphp" href="#set-auth-value-to-cookie-in-configincphp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set auth value to &lsquo;cookie&rsquo; in config.inc.php ()</h4>
+<h4 id="set-the-password-with-mysqladmin"><a name="user-content-set-the-password-with-mysqladmin" href="#set-the-password-with-mysqladmin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set the password with mysqladmin</h4>
+<p>/opt/lampp/bin/mysqladmin -u root password [your_password]</p>
+<h4 id="set-auth_type-value-to-cookie"><a name="user-content-set-auth_type-value-to-cookie" href="#set-auth_type-value-to-cookie" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set auth_type value to &lsquo;cookie&rsquo;</h4>
+<p>In /opt/lampp/phpmyadmin/config.inc.php change to this</p>
+<pre><code>$cfg['Servers'][$i]['auth_type'] = 'cookie';
+</code></pre>
+
 <hr />
 <h2 id="oh-my-szh"><a name="user-content-oh-my-szh" href="#oh-my-szh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>oh-my-szh</h2>
 <h4 id="update"><a name="user-content-update" href="#update" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>update</h4>
