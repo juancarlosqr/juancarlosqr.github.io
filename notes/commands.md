@@ -249,6 +249,10 @@ source ~/.zshrc
 source ~/.bash_profile
 source ~/.bashrc
 
+#### deleting files and directories recursively
+find ./ -type f -name "*.pyc" -exec rm {} \; (files)
+find ./ -type d -name [folder_name] -exec rm -rf {} \; (directories)
+
 ---
 ## apache
 

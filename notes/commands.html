@@ -1207,6 +1207,9 @@ sudo netstat -tulpn</p>
 <p>source ~/.zshrc<br />
 source ~/.bash_profile<br />
 source ~/.bashrc</p>
+<h4 id="deleting-files-and-directories-recursively"><a name="user-content-deleting-files-and-directories-recursively" href="#deleting-files-and-directories-recursively" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>deleting files and directories recursively</h4>
+<p>find ./ -type f -name &ldquo;*.pyc&rdquo; -exec rm {} \; (files)<br />
+find ./ -type d -name [folder_name] -exec rm -rf {} \; (directories)</p>
 <hr />
 <h2 id="apache"><a name="user-content-apache" href="#apache" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>apache</h2>
 <p>/etc/init.d/apache2 start<br />
