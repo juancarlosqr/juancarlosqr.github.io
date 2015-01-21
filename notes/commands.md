@@ -241,7 +241,9 @@ ps aux | grep {pid}
 #### untar tgz files
 tar zxvf {file}.tgz
 
-#### untar tar.gz files
+#### tar.gz files
+tar -zcvf [output_file].tar.gz [files|directory|regex]  (-z uses gzip compress)
+tar -jcvf [output_file].tbz2 [files|directory|regex]    (-j uses bzip2 compress)
 tar xf {file}.tar.gz
 
 #### reload terminal

@@ -1201,8 +1201,10 @@ sudo netstat -tulpn</p>
 <p>ps aux | grep {pid}</p>
 <h4 id="untar-tgz-files"><a name="user-content-untar-tgz-files" href="#untar-tgz-files" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>untar tgz files</h4>
 <p>tar zxvf {file}.tgz</p>
-<h4 id="untar-targz-files"><a name="user-content-untar-targz-files" href="#untar-targz-files" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>untar tar.gz files</h4>
-<p>tar xf {file}.tar.gz</p>
+<h4 id="targz-files"><a name="user-content-targz-files" href="#targz-files" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>tar.gz files</h4>
+<p>tar -zcvf [output_file].tar.gz [files|directory|regex]  (-z uses gzip compress)<br />
+tar -jcvf [output_file].tbz2 [files|directory|regex]    (-j uses bzip2 compress)<br />
+tar xf {file}.tar.gz</p>
 <h4 id="reload-terminal"><a name="user-content-reload-terminal" href="#reload-terminal" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>reload terminal</h4>
 <p>source ~/.zshrc<br />
 source ~/.bash_profile<br />
