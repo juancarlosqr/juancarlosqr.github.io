@@ -210,9 +210,9 @@ npm config ls
 npm config ls -l
 
 #### set default values when using 'npm init'
-npm set init.author.name "Juan Carlos Quintero"
-npm set init.author.email "jcquintero.ce@gmail.com"
-npm set init.author.url "http://juancarlosqr.js.org/"
+npm set init.author.name "Name"
+npm set init.author.email "email"
+npm set init.author.url "url"
 npm set init.license MIT
 
 #### set proxy
