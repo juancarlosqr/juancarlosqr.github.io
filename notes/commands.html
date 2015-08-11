@@ -1172,6 +1172,94 @@ logs/</em>.log</p>
 <p>.gitignore <br />
 logs/*.log</p>
 <hr />
+<h2 id="npm"><a name="user-content-npm" href="#npm" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>npm</h2>
+<h3 id="config"><a name="user-content-config" href="#config" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>config</h3>
+<p>npm config [args&hellip;]</p>
+<h4 id="list-defaults"><a name="user-content-list-defaults" href="#list-defaults" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>list defaults</h4>
+<p>npm config ls</p>
+<h4 id="list-all-defaults"><a name="user-content-list-all-defaults" href="#list-all-defaults" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>list all defaults</h4>
+<p>npm config ls -l</p>
+<h4 id="set-default-values-when-using-npm-init"><a name="user-content-set-default-values-when-using-npm-init" href="#set-default-values-when-using-npm-init" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set default values when using &lsquo;npm init&rsquo;</h4>
+<p>npm set init.author.name &ldquo;Juan Carlos Quintero&rdquo;<br />
+npm set init.author.email &ldquo;<a href="mailto:jcquintero.ce@gmail.com">jcquintero.ce@gmail.com</a>&ldquo;<br />
+npm set init.author.url &ldquo;<a href="http://juancarlosqr.js.org/">http://juancarlosqr.js.org/</a>&ldquo;<br />
+npm set init.license MIT</p>
+<h4 id="set-proxy"><a name="user-content-set-proxy" href="#set-proxy" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>set proxy</h4>
+<p>npm config set proxy <a href="http://proxy.company.com:8080">http://proxy.company.com:8080</a></p>
+<h4 id="getting-global-npm-location"><a name="user-content-getting-global-npm-location" href="#getting-global-npm-location" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>getting global npm location</h4>
+<p>npm config get prefix</p>
+<h4 id="setting-global-npm-location"><a name="user-content-setting-global-npm-location" href="#setting-global-npm-location" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>setting global npm location</h4>
+<p>npm config set prefix=$HOME/.node_modules_global</p>
+<h4 id="export-path"><a name="user-content-export-path" href="#export-path" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>export PATH</h4>
+<p>export PATH=&rdquo;$HOME/.node_modules_global/bin:$PATH&rdquo;</p>
+<h3 id="dependencies"><a name="user-content-dependencies" href="#dependencies" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>dependencies</h3>
+<h4 id="start-a-new-project"><a name="user-content-start-a-new-project" href="#start-a-new-project" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>start a new project</h4>
+<p>npm init</p>
+<h3 id="packages"><a name="user-content-packages" href="#packages" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>packages</h3>
+<h4 id="listing-global"><a name="user-content-listing-global" href="#listing-global" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>listing global</h4>
+<p>npm ls -g &ndash;depth=0<br />
+npm list -g &ndash;depth=0<br />
+npm list -g</p>
+<h4 id="listing-local"><a name="user-content-listing-local" href="#listing-local" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>listing local</h4>
+<p>npm ls<br />
+npm list</p>
+<h4 id="installing-global"><a name="user-content-installing-global" href="#installing-global" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>installing global</h4>
+<p>npm i &ldquo;package&rdquo; -g<br />
+npm install &ldquo;package&rdquo; -g<br />
+npm install &ldquo;package&rdquo; &ndash;global<br />
+npm install &ldquo;package&rdquo;@{semver_version} &ndash;global</p>
+<h4 id="installing-local"><a name="user-content-installing-local" href="#installing-local" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>installing local</h4>
+<p>npm i &ldquo;package&rdquo; [ -S | -D ]<br />
+npm install &ldquo;package&rdquo; [ -S | -D ]<br />
+npm install &ldquo;package&rdquo;@{semver_version} [ -S | -D ]<br />
+-S = &ndash;save = save package to dependencies in package.json<br />
+-D = &ndash;save-dev = save package to devDependencies in package.json</p>
+<h5 id="uninstall-global"><a name="user-content-uninstall-global" href="#uninstall-global" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>uninstall global</h5>
+<p>npm uninstall &ldquo;package&rdquo; -g</p>
+<h5 id="uninstall-local"><a name="user-content-uninstall-local" href="#uninstall-local" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>uninstall local</h5>
+<p>npm uninstall &ldquo;package&rdquo;</p>
+<h4 id="pruning"><a name="user-content-pruning" href="#pruning" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>pruning</h4>
+<p>npm prune (clean packages that are not present in package.json)</p>
+<h4 id="update"><a name="user-content-update" href="#update" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>update</h4>
+<p>npm update &ldquo;package&rdquo;</p>
+<h4 id="search"><a name="user-content-search" href="#search" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>search</h4>
+<p>npm search &ldquo;package&rdquo;</p>
+<h3 id="cache"><a name="user-content-cache" href="#cache" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>cache</h3>
+<p>npm clean<br />
+npm cache clean</p>
+<h3 id="linking"><a name="user-content-linking" href="#linking" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>linking</h3>
+<p>npm link</p>
+<h3 id="help"><a name="user-content-help" href="#help" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>help</h3>
+<p>npm &ldquo;cmd&rdquo; -h<br />
+npm help &ldquo;cmd&rdquo;<br />
+npm help install<br />
+npm help start<br />
+npm help test<br />
+npm help json</p>
+<h3 id="publishing"><a name="user-content-publishing" href="#publishing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>publishing</h3>
+<p>npm publish</p>
+<h3 id="scripts-in-packagejson"><a name="user-content-scripts-in-packagejson" href="#scripts-in-packagejson" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>scripts in package.json</h3>
+<p>npm run|run-script (list)<br />
+npm run|run-script &ldquo;cmd&rdquo; (run the cmd script)</p>
+<h4 id="shorcuts"><a name="user-content-shorcuts" href="#shorcuts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>shorcuts</h4>
+<p>npm start<br />
+npm stop<br />
+npm test</p>
+<h4 id="examples"><a name="user-content-examples" href="#examples" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>examples</h4>
+<p>npm run deploy<br />
+npm run lint</p>
+<h4 id="hooks"><a name="user-content-hooks" href="#hooks" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>hooks</h4>
+<p>npm run prepublish | postpublish<br />
+npm run prebuild | postbuild<br />
+npm run prestart | poststart<br />
+npm run prestop | poststop<br />
+npm run pretest | posttest</p>
+<h3 id="others"><a name="user-content-others" href="#others" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>others</h3>
+<p>npm login</p>
+<p>npm completion</p>
+<p>npm owner ls &ldquo;package&rdquo; (get the package&rsquo;s owner)</p>
+<p>npm bug &ldquo;package&rdquo; (open the GitHub issues page in browser)</p>
+<hr />
 <h2 id="nodejs"><a name="user-content-nodejs" href="#nodejs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>node.js</h2>
 <h4 id="install"><a name="user-content-install" href="#install" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>install</h4>
 <p>npm install -g &ldquo;package&rdquo;<br />
@@ -1227,6 +1315,8 @@ find ./ -type d -name [folder_name] -exec rm -rf {} \; (directories)</p>
 /opt/lampp/etc/http.conf<br />
 /opt/lampp/etc/extra/httpd-vhosts.conf<br />
 /etc/hosts</p>
+<h3 id="php-path-in-windows"><a name="user-content-php-path-in-windows" href="#php-path-in-windows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>PHP path in Windows</h3>
+<p>c:/xampp/php/php.exe</p>
 <hr />
 <h2 id="mysql"><a name="user-content-mysql" href="#mysql" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>mysql</h2>
 <h3 id="connect"><a name="user-content-connect" href="#connect" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>connect</h3>
@@ -1250,7 +1340,7 @@ mysql -u [user] -p [database] &gt; script.sql</p>
 
 <hr />
 <h2 id="oh-my-szh"><a name="user-content-oh-my-szh" href="#oh-my-szh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>oh-my-szh</h2>
-<h4 id="update"><a name="user-content-update" href="#update" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>update</h4>
+<h4 id="update_1"><a name="user-content-update_1" href="#update_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>update</h4>
 <p>apt-get update</p>
 <h4 id="install-zsh"><a name="user-content-install-zsh" href="#install-zsh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>install zsh</h4>
 <p>apt-get install zsh</p>

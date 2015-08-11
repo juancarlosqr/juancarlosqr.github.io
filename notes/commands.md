@@ -140,7 +140,6 @@ git tag -a "tag" -m 'msg' ( adding tag )
 git push --tags ( pushing to remote )
 
 ### log
-
 git log
 
 #### log one line with just hash and commit msg
@@ -163,7 +162,6 @@ git log --since=1.hour.ago
 git log --since=1.month.ago --until=2.weeks.ago
 
 ### reflogs
-
 git reflog
 git hard --reset "hash" (reset to a hash commit in the reflog)
 git hard --reset HEAD@{ "commit_index" }
@@ -172,7 +170,6 @@ git branch "branch" "hash" (get back a deleted branch)
 git branch "branch" HEAD@{ "commit_index" }
 
 ### diffs
-
 git diff
 git diff HEAD
 git diff HEAD^^
@@ -199,6 +196,127 @@ logs/*.log
 #### ignoring
 .gitignore 
 logs/*.log
+
+---
+## npm
+
+### config
+npm config [args...]
+
+#### list defaults
+npm config ls
+
+#### list all defaults
+npm config ls -l
+
+#### set default values when using 'npm init'
+npm set init.author.name "Juan Carlos Quintero"
+npm set init.author.email "jcquintero.ce@gmail.com"
+npm set init.author.url "http://juancarlosqr.js.org/"
+npm set init.license MIT
+
+#### set proxy
+npm config set proxy http://proxy.company.com:8080
+
+#### getting global npm location
+npm config get prefix
+
+#### setting global npm location
+npm config set prefix=$HOME/.node_modules_global
+
+#### export PATH
+export PATH="$HOME/.node_modules_global/bin:$PATH"
+
+### dependencies
+
+#### start a new project
+npm init
+
+### packages
+
+#### listing global
+npm ls -g --depth=0
+npm list -g --depth=0
+npm list -g
+
+#### listing local
+npm ls
+npm list
+
+#### installing global
+npm i "package" -g
+npm install "package" -g
+npm install "package" --global
+npm install "package"@{semver_version} --global
+
+#### installing local
+npm i "package" [ -S | -D ]
+npm install "package" [ -S | -D ]
+npm install "package"@{semver_version} [ -S | -D ]
+-S = --save = save package to dependencies in package.json
+-D = --save-dev = save package to devDependencies in package.json
+
+##### uninstall global
+npm uninstall "package" -g
+
+##### uninstall local
+npm uninstall "package"
+
+#### pruning
+npm prune (clean packages that are not present in package.json)
+
+#### update
+npm update "package"
+
+#### search
+npm search "package"
+
+### cache
+npm clean
+npm cache clean
+
+### linking
+npm link
+
+### help
+npm "cmd" -h
+npm help "cmd"
+npm help install
+npm help start
+npm help test
+npm help json
+
+### publishing
+npm publish
+
+### scripts in package.json
+npm run|run-script (list)
+npm run|run-script "cmd" (run the cmd script)
+
+#### shorcuts
+npm start
+npm stop
+npm test
+
+#### examples
+npm run deploy
+npm run lint
+
+#### hooks
+npm run prepublish | postpublish
+npm run prebuild | postbuild
+npm run prestart | poststart
+npm run prestop | poststop
+npm run pretest | posttest
+
+### others
+npm login
+
+npm completion
+
+npm owner ls "package" (get the package's owner)
+
+npm bug "package" (open the GitHub issues page in browser)
 
 ---
 ## node.js
@@ -275,6 +393,10 @@ sudo ./xampp-linux-1.8.2-2-installer.run
 /opt/lampp/etc/http.conf
 /opt/lampp/etc/extra/httpd-vhosts.conf
 /etc/hosts
+
+### PHP path in Windows
+
+c:/xampp/php/php.exe
 
 ---
 ## mysql
