@@ -20,4 +20,6 @@
 
 - [flexboxgrid](http://flexboxgrid.com/)
 - [Flexbox-Framework](https://github.com/fclaussen/Flexbox-Framework)
+- [flexgrid](http://ptb2.me/flexgrid/)
 - [flexplorer](http://bennettfeely.com/flexplorer/)
+- [Flexbox Responsive Grid Playground CodePen by marcolago](http://codepen.io/marcolago/pen/lqGFb)
