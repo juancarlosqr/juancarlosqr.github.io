@@ -40,7 +40,10 @@ Image from _Analytics: The real-world use of big data_ by _IBM Institute for Bus
 - MongoDB (NoSQL)
 - CouchDB (NoSQL)
 - Netezza 
-- Greenplum
+- [Greenplum](http://greenplum.org/)
+- [MicroStrategy](https://www.microstrategy.com/)
+- [Sting Intelligence](http://stingintelligence.com/)
+- [QlikView](http://www.qlik.com/)
 
 ### Articles
 
@@ -64,6 +67,27 @@ __Hadoop should NOT be used for__
 - Structured data
 - Data which frequently changes
 - Transactional data
+
+### Components
+
+- Sqoop: SQL to Hadoop, command line tool
+- HBase: column-oriented database managment, key-value store, can hold extremely large data, not RDBMS
+- Pig: high level scripting language on top of MapReduce, data analysis problems as data flows, Pig Latin, Pig for ETL
+- Hive: SQL Query, data warehousefor querying and managing distributed large datasets, HiveQL
+- Oozie: workflow scheduler system for Hadoop jobs, Oozie coordinator jobs, supports MapReduce, Pig, Hive, Sqoop, etc
+- Zookeeper: operational services for a Hadoop cluster
+- Flume: distributed, reliable service for efficiently collecting, aggregating and moving large datasets
+- Impala (Cloudera): open source massively parallel processing (MPP) SQL query engine
+- Spark: general engine for large-scale data processing, memory computing, stream processing, complex analytics, support machine learning libraries
+
+## Statistics
+
+### Analytics methodologies
+
+- Aggregate analysis
+- Correlation analysis
+- Trend analysis
+- Sizing and estimation
 
 ## Programming Languages for Statistics
 
@@ -152,6 +176,10 @@ __Documentation__
 
 - Rdocumentaion
 
+__Articles__
+
+- [http://www.r-tutorials.com/index.php/9-r-treasure-box/25-three-main-ways-to-produce-graphs-in-r](http://www.r-tutorials.com/index.php/9-r-treasure-box/25-three-main-ways-to-produce-graphs-in-r)
+
 ### SAS
 
 __Data Structures__
@@ -228,3 +256,9 @@ Keys things when importing data into SAS
 ## Quotes
 
 > Data Science exists to provide a service to business, and business is run by people
+
+> The modern world overwhelms people with data and this overabundance is both "confusing and harmful" to the mind - Conrad Gessner
+
+> Big Data is about Increase sales. Reduce costs. Streamline processes
+
+> Each business or organization is now in the software business. This is because every company runs software, which accumulates data that can be harnessed and mashed with other data to provide useful insights.
