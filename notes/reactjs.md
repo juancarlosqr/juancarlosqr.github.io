@@ -86,7 +86,9 @@ Declarative model
 - http://calendar.perfplanet.com/2013/diff/
 - https://github.com/enaqx/awesome-react
 - https://blog.risingstack.com/the-react-way-getting-started-tutorial/
-
+- http://www.bennadel.com/blog/2904-shouldcomponentupdate-will-short-circuit-an-entire-subtree-of-components-in-reactjs.htm
+- http://busypeoples.github.io/post/react-component-lifecycle/
+- http://buildwithreact.com/article/optimizing-with-shouldcomponentupdate
 - http://jamesknelson.com/react-js-by-example-interacting-with-the-dom/
 - http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
 - https://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way
