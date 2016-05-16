@@ -12,6 +12,12 @@
 
 ### What is it
 
+- The main goal is to build reusable UI components
+- It uses a declarative model
+- A component is a finite-state machine (ideally)
+- It isn't a full-stack JS framework like Angular, or Ember
+- React is mainly a CONCEPT, and a library just secondly
+
 React is a UI library developed at Facebook.
 
 The main goal is to build reusable UI components.
