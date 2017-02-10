@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/railscasts.css">
@@ -56,11 +57,89 @@
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
+					<h2>Topics</h2>
+					<ul>
+						<li>Basic Intro to ReactJS</li>
+						<li>JSX</li>
+						<li>One-way data flow</li>
+						<li>Virtual DOM</li>
+						<li>Coding</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Basic Intro to ReactJS</h2>
+					<ul>
+						<li class="fragment">Reusable components</li>
+						<li class="fragment">Declarative</li>
+						<li class="fragment">Finite-state machine</li>
+						<li class="fragment">Not a framework</li>
+						<li class="fragment">React is mainly a CONCEPT, and a library just secondly</li>
+					</ul>
+					<aside class="notes">
+						The main goal is to build reusable UI components.<br />
+						It uses a declarative model.<br />
+						A component is a finite-state machine (ideally).<br />
+						It isn't a full-stack JS framework like Angular, or Ember.<br />
+						React is mainly a CONCEPT, and a library just secondly.<br />
+					</aside>
+				</section>
+
+				<section>
+					<h3>Reusable UI components</h3>
+					<p>So if we have this...</p>
+					<img src="./img/dashboard-thinking-in-react-mock.png" />
+				</section>
+
+				<section>
+					<h3>Reusable UI components</h3>
+					<p>We turn it into this...</p>
+					<img src="./img/dashboard-thinking-in-react-components.png" />
+				</section>
+
+				<section>
+					<h2>JSX</h2>
+					<p>React's website definition</p>
+					<blockquote cite="https://facebook.github.io/react/docs/jsx-in-depth.html">&ldquo;JSX is a JavaScript syntax extension that looks similar to XML&rdquo;</blockquote>
+					<pre class="fragment">
+						<code class="hljs" data-trim>
+import React from 'react'
+
+function Header (props) {
+  return (
+    <div>
+      <h3>{ props.title }</h3>
+    </div>
+  )
+}
+
+export default Header
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>JSX</h2>
+					<p>Lets you build DOM nodes with HTML-like syntax</p>
+					<blockquote class="fragment" cite="https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.rgjtu45zj">
+						&ldquo;As an industry, we’ve already decided: HTML and JavaScript belong together...&rdquo;
+					</blockquote>
+					<blockquote class="fragment" cite="https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.rgjtu45zj">
+						&ldquo;Angular, Ember and Knockout put 'JS' in your HTML. React puts 'HTML' in your JS.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>One-way data flow</h2>
 					<h3>The javascript library<br />for building user interfaces</h3>
 					<p>
 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
 					</p>
+				</section>
+
+				<section>
+					<h2>Virtual DOM</h2>
+					<h3>The core feature of ReactJS</h3>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -228,27 +307,6 @@
 						You can override background transitions per-slide.
 					</p>
 					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
 				<section>
