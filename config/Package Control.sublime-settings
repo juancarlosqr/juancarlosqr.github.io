@@ -1,0 +1,19 @@
+{
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "Babel",
+    "BracketHighlighter",
+    "GitGutter",
+    "Jade",
+    "Markdown Preview",
+    "Package Control",
+    "Pretty JSON",
+    "Sass",
+    "Theme - Afterglow",
+    "WakaTime"
+  ]
+}
